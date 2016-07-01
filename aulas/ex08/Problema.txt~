@@ -1,0 +1,35 @@
+
+Problema: Dadas duas strings text e word, procure word em text.
+
+Exemplo:
+
+	text = "ttetesteabc"
+	word = "teste"
+
+Algoritmo: Conjunto de passos (em certa ordem) para resolver meu
+	   problema.
+
+
+Solução
+=======
+
+1) i = 0
+2) A partir de text[i]
+	3) n = 0
+	4) if word[n] == text[i+n]
+		- Incrementar n
+		- Voltar para o passo 4
+	   else
+		- Voltar para o passo 2, incrementar i
+
+Solução parcial 1
+=================
+
+1) A partir de text[i], em que i = 0
+	2) Comparar word[j] == text[i], em que j = 0
+		- Incrementar j
+		- Incrementar i
+		- if iguais:
+			- Volte para o passo 2
+		- else
+			- Volte para o passo 1, voltar i = 1, j = 0

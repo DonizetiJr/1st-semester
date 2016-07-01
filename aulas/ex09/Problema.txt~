@@ -1,0 +1,13 @@
+Problema:
+
+Considere que seu programa recebe um vetor de inteiros positivos.
+Ordene seus elementos e imprima-os na tela.
+
+Algoritmo:
+  
+0) Para j = 1 até numerodeelementos-1, j++
+	1) Para i = 0 até numerodeelementos-j, i++
+		2) comparar v[i] > v[i+1]
+			- trocar v[i] com v[i+1]
+		- Volte para o passo 1
+	   - Volte para o passo 0

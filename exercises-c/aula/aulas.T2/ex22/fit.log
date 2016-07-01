@@ -1,0 +1,102 @@
+
+
+*******************************************************************************
+Thu Jun  2 09:23:38 2016
+
+
+FIT:    data read from "busca.txt"
+        format = z
+        #datapoints = 25
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a+log(b*x)/log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 5.6661894059e+03   0.00e+00  1.24e+00    1.000000e+00   1.000000e+00
+   4 1.1598802669e+03  -5.16e-02  1.24e-04   -1.367025e+01  -2.369266e+00
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 1159.88
+rel. change during last iteration : -5.15842e-07
+
+degrees of freedom    (FIT_NDF)                        : 23
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.10138
+variance of residuals (reduced chisquare) = WSSR/ndf   : 50.4296
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -13.6702         +/- 1.156e+12    (8.457e+12%)
+b               = -2.36927         +/- 1.9e+12      (8.018e+13%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b               1.000  1.000 
+
+
+*******************************************************************************
+Thu Jun  2 09:24:21 2016
+
+
+FIT:    data read from "busca.txt"
+        format = z
+        #datapoints = 25
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a+log(b*x)/log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 1.1598802669e+03   0.00e+00  9.72e+00   -1.367025e+01  -2.369266e+00
+   1 1.1598802669e+03  -1.96e-11  9.72e-01   -1.367025e+01  -2.369266e+00
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 1159.88
+rel. change during last iteration : -1.96032e-16
+
+degrees of freedom    (FIT_NDF)                        : 23
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.10138
+variance of residuals (reduced chisquare) = WSSR/ndf   : 50.4296
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -13.6702         +/- 1.214e+12    (8.882e+12%)
+b               = -2.36927         +/- 1.995e+12    (8.421e+13%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b               1.000  1.000 
+
+
+*******************************************************************************
+Thu Jun  2 09:24:42 2016
+
+
+FIT:    data read from "busca.txt"
+        format = z
+        #datapoints = 25
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a+log(x)/log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 1.1985960402e+03   0.00e+00  1.37e+01   -1.367025e+01
+   3 1.1598802669e+03  -7.89e-07  1.37e-02   -1.242581e+01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 1159.88
+rel. change during last iteration : -7.89401e-12
+
+degrees of freedom    (FIT_NDF)                        : 24
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.95186
+variance of residuals (reduced chisquare) = WSSR/ndf   : 48.3283
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = -12.4258         +/- 1.39         (11.19%)

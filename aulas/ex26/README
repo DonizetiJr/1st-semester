@@ -1,0 +1,10 @@
+[mello@megadeth ex26]$ echo $LD_LIBRARY_PATH
+
+[mello@megadeth ex26]$ export LD_LIBRARY_PATH=`pwd`
+[mello@megadeth ex26]$ echo $LD_LIBRARY_PATH
+/filesystem/courses/2016/01/scc0221/aulas.T2/ex26
+[mello@megadeth ex26]$ 
+[mello@megadeth ex26]$ 
+[mello@megadeth ex26]$ ./test03
+Resultado: 35.930000
+

@@ -1,0 +1,10 @@
+
+
+
+
+	ret1 = 1
+	ret2 = 1
+	fibonacci(4)
+	ret1 = 1
+	ret2 = ?
+	fibonacci(5)

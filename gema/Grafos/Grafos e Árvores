@@ -1,0 +1,101 @@
+Grafos e Árvores (sem ciclos)
+============================
+
+GRAFOS
+
+	Conjunto de arestas que ligam pares de um conjunto de vértices.
+	A arestas podem ser direcionadas ou não.
+	Exemplos:
+		- Metrô: possui ciclos (tem caminhos de ida e volta); 
+		- cadeia alimentar: não possui ciclos;
+		- ruas e suas casas;
+		- gráficos de relacionamentos: bipartido (subconjunto dos vértices não tem arestas para outro subconjunto).
+	
+	Matriz adjacência
+		Quando os vértices são direcionados a matriz não é simétrica, e quando existe aresta "ida e volta" para dois
+vértices, a matriz é simétrica (ou espelhada).
+
+	Grafos podem surgir implicitamente como distâncias, co-ocorrências, relações, etc.
+
+LISTA DE ADJACÊNCIA
+
+	const int N = 101 //n maximo de vertices
+	vector<int> g[N] //lista de adjacência
+	vector<int> w[N] //pesos(se o problema pedir)
+	int n; // n de vértices
+
+	m[1].pushback(2);
+	m[2].pushback(1);
+	m[4].pushback(6);
+	m[6].pushback(4);
+
+
+
+	Busca em profundidade:
+		Queremos buscar o vértice x. Retornamos true se ele é atingível e false cc
+			para todo vértice i
+				se i = x, retornar x
+				Senão, olhar todas as arestas (i,j) de i
+					Repetir o procedimento em j. Se ele retornar true, retornar true
+				retornar false
+
+		Mas se for um ciclo, este algoritmo pode nunca acabar!
+
+			Queremos buscar o vértice x. Retornamos true se ele é atingível e false cc
+			para todo vértice i
+				se i já foi visitado, retornar
+				marcar i como visitado, se i = x, retornar true
+				Senão, olhar todas as arestas (i,j) de i
+					Repetir o procedimento em j. Se ele retornar true, retornar true
+				retornar false
+
+
+
+		const int N = 101 
+		vector<int g[N]
+		bool used[N]
+		void dfs (int curr) {
+		used[curr] = true;
+			for (int i=0, i<g[curr].size();i++) {
+				int next = g[curr][i];
+				if(!used[next])
+					dfs(next)
+			}
+		}
+
+		Dizemos que um grafo é bicolorível se nenhum vértcie tem um vizinho da mesma cor.
+
+		const int N = 101 
+		vector<int g[N]
+		int cor[N]
+		bool bicolorir(int curr, int c) {
+		cor[curr] = c
+
+		for (int i=0, i<g[curr].size();i++) {
+				int next = g[curr][i];
+			if(cor[next] == -1) {
+				if(!bicolorir(next, !c)) return false;
+			} else if (cor[next] == c) return flase;
+		}
+
+		Busca em largura (breadth first search - BFS)
+
+		Dado um grafo G, queremos saber em quantos passo, no minimo, é possivel chegar de um vértice A em 
+um vértice B.
+		Utiliza uma fila
+		Equivale a olhar todas as bifurcações antes de seguir adiante
+
+		void bfs(int beg) // beg é o vértice que vai começar
+			queue<int> q;
+			q.push(beg)
+			dist(beg);
+			dist[beg] = 0
+			while(q.empty()) {
+				for(int i=0; i < g[curr].size();i++) {
+					int next = g[curr][i]
+					if(!dist[next] == INF) {
+						dist[next] = dist[curr]+1;
+						q.push(next);
+					}
+				}
+			}
